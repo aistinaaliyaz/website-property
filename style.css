@@ -1,0 +1,206 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* --- HEADER & NAVIGASI (Judul Tengah, Menu Rata Kiri, Putih) --- */
+header {
+    background-color: #004d40;
+    color: white;
+    padding: 20px;
+    text-align: center; /* Judul dan Subjudul di tengah */
+}
+
+.main-nav {
+    margin-top: 15px;
+    background-color: #00332e; 
+    padding: 10px 0;
+}
+
+.nav-links-container { 
+    max-width: 1200px; /* Samakan dengan lebar main */
+    width: 90%;
+    margin: 0 auto; /* Tengah-kan kontainer link */
+    
+    display: flex; 
+    justify-content: flex-start; /* KUNCI: Membuat link rata kiri di dalam kontainer */
+}
+
+.main-nav a {
+    color: white; /* KUNCI: Warna teks putih */
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.main-nav a:hover {
+    background-color: #00665c;
+    border-radius: 5px;
+}
+
+/* --- GAYA UTAMA KONTEN --- */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    border-bottom: 2px solid #004d40;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #004d40;
+}
+
+.hidden {
+    display: none;
+}
+
+/* --- DAFTAR PROPERTI CARD --- */
+#daftar-properti {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.properti-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.properti-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.properti-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-body h3 {
+    margin-top: 0;
+    color: #004d40;
+}
+
+.card-body p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.harga {
+    font-weight: bold;
+    color: #d84315;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* --- DETAIL PROPERTI --- */
+#detail-properti {
+    padding: 20px;
+}
+
+#detail-properti img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.back-button {
+    background-color: #004d40;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+/* --- GAYA KONTAK (Formulir Rapi) --- */
+.kontak-content {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; /* Agar responsif */
+}
+
+#contact-form {
+    flex: 2;
+    min-width: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+#contact-form label {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Agar padding tidak menambah lebar */
+}
+
+#contact-form button {
+    background-color: #d84315;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #b73811;
+}
+
+.kontak-info {
+    flex: 1;
+    min-width: 200px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #004d40;
+    border-radius: 4px;
+}
+
+.kontak-info h3 {
+    margin-top: 0;
+    color: #004d40;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px; 
+}

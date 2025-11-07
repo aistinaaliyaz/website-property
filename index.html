@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properti Dijual - Rumah Impian</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .logo {
+            height: 2.5em; /* Sesuaikan ukuran logo */
+            vertical-align: middle;
+            margin-right: 0.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><img src="aliyaland.png" alt="Logo Rumah Impian Realty" class="logo"> Rumah & Villa Impian Realty</h1>
+        <p>Temukan rumah/ villa idaman Anda bersama kami.</p>
+        
+        <nav class="main-nav">
+            <div class="nav-links-container"> 
+                <a href="#" onclick="tampilkanSection('daftar-properti')">Properti</a>
+                <a href="#" onclick="tampilkanSection('tentang-kami')">Tentang Kami</a>
+                <a href="#" onclick="tampilkanSection('kontak')">Kontak</a>
+                <a href="#">Lainnya</a>
+            </div>
+        </nav>
+        </header>
+    
+    <main>
+        <section id="daftar-properti">
+            <h2>Daftar Properti Terbaru</h2>
+            </section>
+
+        <section id="detail-properti" class="hidden">
+            </section>
+        
+        <section id="tentang-kami" class="hidden"> 
+            <h2>Tentang Kami</h2>
+            <p>Rumah Impian Realty telah membantu ribuan keluarga menemukan rumah sempurna mereka sejak 2010. Kami berkomitmen memberikan layanan terbaik dan properti berkualitas.</p>
+            <p>Visi kami adalah menjadi agen properti terpercaya di Indonesia.</p>
+        </section>
+
+        <section id="kontak" class="hidden">
+            <h2>📞Kontak Kami</h2>
+            <p>Silakan hubungi kami melalui formulir di bawah ini atau melalui info yang tertera.</p>
+            
+            <div class="kontak-content">
+                <form id="contact-form">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="pesan">Pesan/Pertanyaan:</label>
+                    <textarea id="pesan" name="pesan" rows="4" required></textarea>
+                    
+                    <button type="submit">Kirim Pesan</button>
+                </form>
+
+                <div class="kontak-info">
+                    <h3>Informasi Kantor</h3>
+                    <p><strong>Alamat:</strong> Jl. Raya Properti No. 10, Jakarta Pusat</p>
+                    <p><strong>Telepon:</strong> (+62) 896-2250-9230</p>
+                    <p><strong>Email:</strong> aistinaaliyazahra@gmail.com</p>
+                    <p><strong>Jam Kerja:</strong> Sen-Jum, 09:00 - 17:00 WIB</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Rumah Impian Realty. Hubungi: (+62) 896-2250-9230</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
